@@ -10,15 +10,16 @@ while quit == False :
             print("\nUnacceptable input")
         else:
             inventory += int(userInput)
-            rejectedStock = inventory - 500
+
             if inventory >=  500:
+                rejectedStock = inventory - 500
                 inventory = 500
                 if(rejectedStock > 0):
                     print("\nInventory exceeds 500 limit quitting program")
                     print("\nRejected Stock: " + str(rejectedStock))
                 else:
                     print("\nInventory has hit the limit of 500")
-                quit = True
+                break
         
     elif userInput.lower() == "quit":
         quit = True
