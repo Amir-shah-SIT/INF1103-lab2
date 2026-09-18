@@ -24,7 +24,7 @@ def process_delivery(current_total, new_value):
     return current_total
 
 def calculate_tax(amount):
-    tax = amount *.10
+    tax = amount * 2.5 * .10
     return tax
 
 def generate_report(total_units, failed_attempts):  
