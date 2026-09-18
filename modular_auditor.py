@@ -42,7 +42,7 @@ while quit == False :
         break
     else:
         inventory = process_delivery(inventory,accepted_Input)
-        if inventory > 500:
+        if inventory >= 500:
             generate_report(500,rejected)
             print("\nNumber of Rejected Stock: "+ str(inventory-500))
             tax = calculate_tax(500)
